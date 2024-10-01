@@ -91,7 +91,7 @@ namespace doga
             try
             {
                 connection.Open();
-                string querry = $"delete from {tablename} where id = {onebakery.id})";
+                string querry = $"delete from {tablename} where id = {onebakery.id}";
                 MySqlCommand command = new MySqlCommand(querry, connection);
                 command.ExecuteNonQuery();
                 command.Dispose();
